@@ -2,10 +2,11 @@
 import Image from "next/image";
 import { client, urlFor } from "./lib/sanity";
 import { simpleBlogCard } from "./lib/interface";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/button";
 import Link from "next/link";
 
+export const revalidate = 30; // revalidate at most 30 seconds
 
 async function getData() {
   const query = `
