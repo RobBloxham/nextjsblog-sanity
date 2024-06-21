@@ -7,7 +7,7 @@ export default function Navbar() {
         <Link
         href={'/'}
         className="font-bold text-3xl">
-        Robert's<span className="text-primary">Blog</span>
+        Roberts<span className="text-primary">Blog</span>
         </Link>
         <ModeToggle />
     </nav>
